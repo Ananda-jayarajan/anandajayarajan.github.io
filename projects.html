@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Project</title>
+  <title>My Projects</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -29,6 +29,30 @@
       color: #586069;
     }
 
+    nav {
+      display: flex;
+      justify-content: flex-start;
+      gap: 4rem;
+      margin: 2rem;
+    }
+    nav div {
+      flex: 1;
+    }
+    nav h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    nav a {
+      display: block;
+      color: #0366d6;
+      text-decoration: none;
+      margin: 0.3rem 0;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     main {
       max-width: 900px;
       margin: 2rem auto;
@@ -47,6 +71,13 @@
       margin: 0.5rem 0;
     }
 
+    img {
+      max-width: 100%;
+      margin: 1rem 0;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+
     footer {
       margin-top: 3rem;
       padding: 2rem;
@@ -60,16 +91,61 @@
 <body>
 
   <header>
-    <h1>🚀 My Project</h1>
+    <h1>🚀 My Projects</h1>
     <p>A minimal GitHub-style project page</p>
   </header>
 
-  <main>
-    <h2>Project 1</h2>
-    <p>Description of Project 1 goes here. You can briefly explain what the project does and why it is important.</p>
+  <!-- Index Section -->
+  <nav>
+    <div>
+      <h3>COMSOL</h3>
+      <a href="#comsol-project1">Polarization of electrolyte</a>
+    </div>
+    <div>
+      <h3>Electrochemical Devices</h3>
+      <a href="#supercapacitor">Supercapacitor</a>
+      <a href="#li-ion-battery">Li-ion Battery</a>
+      <a href="#electrolyzer">Electrolyzer</a>
+    </div>
+    <div>
+      <h3>Institutions</h3>
+      <a href="#cecri">CSIR-CECRI</a>
+      <a href="#pondicherry">Pondicherry University</a>
+      <a href="#uic">UIC</a>
+      <a href="#uo">University of Oregon</a>
+    </div>
+  </nav>
 
-    <h2>Project 2</h2>
-    <p>Description of Project 2 goes here. Provide highlights, tools used, or outcomes of the project.</p>
+  <main>
+    <h2 id="comsol-project1">Polarization of electrolyte</h2>
+    <p><strong>Objective:</strong> To analyze the steady-state distribution of ions and electric potential in a 1D electrolyte confined between two inert electrodes using COMSOL Multiphysics. The system models ion migration under an applied electric field and diffusion, with no charge transfer at the electrodes. This allows visualization of electric double layer formation and potential distribution【49†source】.</p>
+
+    <p><strong>Results:</strong> The simulation shows that cations accumulate near the left electrode, while anions accumulate near the right electrode, forming electric double layers. The electric potential drops symmetrically across the two electrode interfaces. The fluxes balance so that there is no net current at steady state, confirming consistency with the drift-diffusion model【49†source】.</p>
+
+    <img src="images/Fig3-electric-potential.png" alt="Electric potential profile">
+    <img src="images/Fig1-conc-profile-species-a.png" alt="Concentration profile of species a">
+    <img src="images/Fig2-conc-profile-species-c.png" alt="Concentration profile of species c">
+
+    <h2 id="supercapacitor">Supercapacitor</h2>
+    <p>Description for Supercapacitor project goes here.</p>
+
+    <h2 id="li-ion-battery">Li-ion Battery</h2>
+    <p>Description for Li-ion Battery project goes here.</p>
+
+    <h2 id="electrolyzer">Electrolyzer</h2>
+    <p>Description for Electrolyzer project goes here.</p>
+
+    <h2 id="cecri">CSIR-CECRI</h2>
+    <p>Work and projects related to CSIR-CECRI.</p>
+
+    <h2 id="pondicherry">Pondicherry University</h2>
+    <p>Work and projects related to Pondicherry University.</p>
+
+    <h2 id="uic">UIC</h2>
+    <p>Work and projects related to UIC.</p>
+
+    <h2 id="uo">University of Oregon</h2>
+    <p>Work and projects related to University of Oregon.</p>
   </main>
 
   <footer>
