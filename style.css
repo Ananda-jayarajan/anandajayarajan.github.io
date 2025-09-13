@@ -168,3 +168,27 @@ h3 {
   margin-bottom: 10px;
 }
 
+/* Education Section */
+.edu-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.edu-card h4 {
+  margin-top: 0;
+  color: #0077ff;
+}
+
+.edu-card p {
+  margin: 5px 0;
+}
+
+.edu-card ul {
+  margin: 10px 0 0 20px;
+}
+
