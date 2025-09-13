@@ -192,3 +192,38 @@ h3 {
   margin: 10px 0 0 20px;
 }
 
+/* Contact Section */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contact-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  color: #0077ff;
+}
+
+.contact-card p {
+  margin: 10px 0;
+}
+
+.contact-card a {
+  color: #0077ff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
