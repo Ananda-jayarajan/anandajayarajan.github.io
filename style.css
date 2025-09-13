@@ -1,0 +1,84 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  background: #333;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Sections */
+.section {
+  padding: 100px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#overview .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.profile-text {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.profile-photo {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-photo img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Text Styling */
+.bold {
+  font-weight: 700;
+}
+
+.highlight {
+  color: #0077ff;
+  font-weight: 700;
+}
+
+h3 {
+  color: #777;
+  margin-top: 5px;
+}
