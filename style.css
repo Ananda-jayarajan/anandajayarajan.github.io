@@ -9,7 +9,7 @@ body {
 
 /* Navbar */
 nav {
-  background: #4b2e2e; /* Dark brown */
+  background: #4b2e2e;              /* Dark brown */
   padding: 1rem 2rem;
   position: fixed;
   width: 100%;
@@ -26,7 +26,6 @@ nav .nav-left {
   font-weight: bold;
   color: #fff;
   font-size: 1.2rem;
-  font-family: Arial, sans-serif;
 }
 
 nav ul {
@@ -59,7 +58,7 @@ nav ul li a:hover {
   border-right: 1px solid #ddd;
   padding: 20px;
   position: fixed;
-  top: 60px;
+  top: 60px;                        /* below navbar */
   left: 0;
   height: calc(100vh - 60px);
   overflow-y: auto;
@@ -67,63 +66,94 @@ nav ul li a:hover {
 }
 
 .sidebar img {
-  width: 120px;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 .sidebar h2 {
-  font-size: 1.2rem;
-  margin: 10px 0 5px;
+  font-size: 1.25rem;
+  margin: 6px 0 2px;
+  font-weight: 700;
 }
 
-.sidebar p {
-  font-size: 0.9rem;
-  color: #666;
-  margin: 5px 0 15px;
+.sidebar .role {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 8px;
 }
 
-/* Sidebar links */
+.meta-line {
+  font-size: 0.92rem;
+  color: #555;
+  margin: 6px 0 16px;
+}
+
+.meta-line i {
+  margin-right: 8px;
+}
+
+/* Sidebar links with small icons */
 .sidebar .links {
   text-align: left;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .sidebar .links a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 10px 0;
   color: #444;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.97rem;
+}
+
+.sidebar .links a i {
+  width: 18px;
+  text-align: center;
+  font-size: 1rem;  /* small icon */
+  opacity: 0.85;
 }
 
 .sidebar .links a:hover {
   color: #0077ff;
 }
 
-/* Main content */
+/* Main content area */
 .main-content {
   margin-left: 280px;
-  margin-right: 100px; /* spacing on right like reference site */
   padding: 80px 40px 40px;
-  text-align: justify;
+  max-width: 900px;     /* leaves white space on right */
+  margin-right: auto;
 }
 
-/* Section Titles */
+/* Major titles */
+.main-title,
 .section-title {
-  font-size: 2.2rem;
-  font-weight: bold;
+  color: #8B4513;         /* Brown */
   font-family: Arial, sans-serif;
-  color: #4b2e2e; /* Brown */
-  margin-bottom: 20px;
+  font-weight: bold;
   text-align: center;
 }
 
-/* Education Section */
+.main-title {
+  font-size: 2.6rem;
+  margin: 0 0 14px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin: 26px 0 16px;
+}
+
+/* Education Cards */
 .edu-card {
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 20px;
   margin: 20px auto;
   max-width: 900px;
@@ -131,7 +161,7 @@ nav ul li a:hover {
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-start; /* keep logo at top */
 }
 
 .edu-content {
@@ -139,23 +169,38 @@ nav ul li a:hover {
   padding-right: 15px;
 }
 
+.edu-content h4 {
+  margin: 0 0 8px;
+  color: #1e90ff;                /* blue degree title */
+  font-weight: bold;
+}
+
+.edu-content p {
+  margin: 6px 0;
+}
+
+.edu-content ul {
+  margin: 8px 0 0 20px;
+}
+
+/* small top-right logo */
 .edu-logo img {
   width: 50px;
   height: auto;
   object-fit: contain;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
-/* Contact Section */
+/* Contact */
 .contact-container {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .contact-card {
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 20px;
   max-width: 600px;
   background: #fff;
@@ -164,13 +209,8 @@ nav ul li a:hover {
 
 .contact-card h3 {
   margin-top: 0;
-  font-family: Arial, sans-serif;
+  color: #8B4513;
   font-weight: bold;
-  color: #4b2e2e; /* Brown */
-}
-
-.contact-card p {
-  margin: 10px 0;
 }
 
 .contact-card a {
@@ -190,6 +230,7 @@ nav ul li a:hover {
   }
   .main-content {
     margin-left: 0;
-    margin-right: 0;
+    max-width: 100%;
+    padding: 90px 18px 40px;
   }
 }
