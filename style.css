@@ -7,9 +7,8 @@ body {
   text-align: justify;
 }
 
-/* Navbar */
 nav {
-  background: #4b2e2e;              /* Dark brown */
+  background: #4b2e2e;
   padding: 1rem 2rem;
   position: fixed;
   width: 100%;
@@ -22,34 +21,39 @@ nav {
   font-family: Arial, sans-serif;
 }
 
-nav .nav-left {
+.nav-left {
   font-weight: bold;
   color: #fff;
   font-size: 1.2rem;
 }
 
-nav ul {
-  list-style: none;
+.nav-center {
+  flex: 1;
   display: flex;
   justify-content: center;
+}
+
+.nav-center ul {
+  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
+.nav-center ul li {
   margin: 0 15px;
 }
 
-nav ul li a {
+.nav-center ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-family: Arial, sans-serif;
 }
 
-nav ul li a:hover {
+.nav-center ul li a:hover {
   color: #ffcc00;
 }
+
 
 /* Sidebar */
 .sidebar {
@@ -234,3 +238,4 @@ nav ul li a:hover {
     padding: 90px 18px 40px;
   }
 }
+
