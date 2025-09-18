@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  text-align: justify; /* Justify align all content */
+  text-align: justify;
 }
 
 /* Navbar */
@@ -19,14 +19,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Arial, sans-serif !important; /* Force Arial in nav */
+  font-family: Arial, sans-serif;
 }
 
 nav .nav-left {
   font-weight: bold;
   color: #fff;
   font-size: 1.2rem;
-  font-family: Arial, sans-serif !important;
+  font-family: Arial, sans-serif;
 }
 
 nav ul {
@@ -42,10 +42,10 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff; /* white text */
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-family: Arial, sans-serif !important; /* Arial font */
+  font-family: Arial, sans-serif;
 }
 
 nav ul li a:hover {
@@ -59,7 +59,7 @@ nav ul li a:hover {
   border-right: 1px solid #ddd;
   padding: 20px;
   position: fixed;
-  top: 60px; /* pushes it below navbar */
+  top: 60px;
   left: 0;
   height: calc(100vh - 60px);
   overflow-y: auto;
@@ -76,14 +76,12 @@ nav ul li a:hover {
 .sidebar h2 {
   font-size: 1.2rem;
   margin: 10px 0 5px;
-  font-family: Arial, sans-serif;
 }
 
 .sidebar p {
   font-size: 0.9rem;
   color: #666;
   margin: 5px 0 15px;
-  font-family: Arial, sans-serif;
 }
 
 /* Sidebar links */
@@ -93,65 +91,33 @@ nav ul li a:hover {
 }
 
 .sidebar .links a {
-  display: flex;
-  align-items: center;
+  display: block;
   margin: 10px 0;
   color: #444;
   text-decoration: none;
   font-size: 0.95rem;
-  font-family: Arial, sans-serif;
 }
 
 .sidebar .links a:hover {
   color: #0077ff;
 }
 
-.sidebar .links i {
-  margin-right: 10px;
-  font-size: 1.1rem;
-}
-
-/* Main content shifted to the right of sidebar with margin */
+/* Main content */
 .main-content {
   margin-left: 280px;
+  margin-right: 100px; /* spacing on right like reference site */
   padding: 80px 40px 40px;
-  max-width: 900px; /* Limit content width */
-  margin-right: auto; /* leave white space on the right */
   text-align: justify;
-  font-family: Arial, sans-serif;
 }
 
-/* Remove right-side profile photo */
-.profile-photo {
-  display: none;
-}
-
-/* Section Titles (major titles) */
+/* Section Titles */
 .section-title {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 10px;
-  color: #8B4513; /* Brown */
-  font-family: Arial, sans-serif !important;
+  font-size: 2.2rem;
   font-weight: bold;
-}
-
-/* Special styling for main name/title */
-.main-title {
-  font-size: 2.8rem;
-  color: #8B4513; /* Brown */
-  font-family: Arial, sans-serif !important;
-  font-weight: bold;
-  text-align: center;
-}
-
-.section-desc {
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
-  color: #555;
-  margin-bottom: 40px;
   font-family: Arial, sans-serif;
+  color: #4b2e2e; /* Brown */
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Education Section */
@@ -163,23 +129,21 @@ nav ul li a:hover {
   max-width: 900px;
   background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  text-align: justify;
-  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.edu-card h4 {
-  margin-top: 0;
-  color: #1e90ff; /* Blue for degree titles */
-  font-family: Arial, sans-serif;
-  font-weight: bold;
+.edu-content {
+  flex: 1;
+  padding-right: 15px;
 }
 
-.edu-card p {
-  margin: 5px 0;
-}
-
-.edu-card ul {
-  margin: 10px 0 0 20px;
+.edu-logo img {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+  margin-top: 5px;
 }
 
 /* Contact Section */
@@ -196,14 +160,13 @@ nav ul li a:hover {
   max-width: 600px;
   background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  font-family: Arial, sans-serif;
 }
 
 .contact-card h3 {
   margin-top: 0;
-  color: #8B4513; /* Brown */
   font-family: Arial, sans-serif;
   font-weight: bold;
+  color: #4b2e2e; /* Brown */
 }
 
 .contact-card p {
@@ -214,7 +177,6 @@ nav ul li a:hover {
   color: #0077ff;
   text-decoration: none;
   margin-right: 15px;
-  font-family: Arial, sans-serif;
 }
 
 .contact-card a:hover {
@@ -228,6 +190,6 @@ nav ul li a:hover {
   }
   .main-content {
     margin-left: 0;
-    max-width: 100%;
+    margin-right: 0;
   }
 }
