@@ -19,13 +19,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Arial, sans-serif; /* Top bar font as Arial */
+  font-family: Arial, sans-serif !important; /* Force Arial in nav */
 }
 
 nav .nav-left {
   font-weight: bold;
   color: #fff;
   font-size: 1.2rem;
+  font-family: Arial, sans-serif !important;
 }
 
 nav ul {
@@ -44,7 +45,7 @@ nav ul li a {
   color: #fff; /* white text */
   text-decoration: none;
   font-weight: bold;
-  font-family: Arial, sans-serif; /* Arial font for nav links */
+  font-family: Arial, sans-serif !important; /* Force Arial font */
 }
 
 nav ul li a:hover {
@@ -75,12 +76,14 @@ nav ul li a:hover {
 .sidebar h2 {
   font-size: 1.2rem;
   margin: 10px 0 5px;
+  font-family: Arial, sans-serif;
 }
 
 .sidebar p {
   font-size: 0.9rem;
   color: #666;
   margin: 5px 0 15px;
+  font-family: Arial, sans-serif;
 }
 
 /* Sidebar links */
@@ -96,6 +99,7 @@ nav ul li a:hover {
   color: #444;
   text-decoration: none;
   font-size: 0.95rem;
+  font-family: Arial, sans-serif;
 }
 
 .sidebar .links a:hover {
@@ -112,6 +116,7 @@ nav ul li a:hover {
   margin-left: 280px;
   padding: 80px 40px 40px;
   text-align: justify; /* Justify align content */
+  font-family: Arial, sans-serif;
 }
 
 /* Remove right-side profile photo */
@@ -125,7 +130,7 @@ nav ul li a:hover {
   text-align: center;
   margin-bottom: 10px;
   color: #8B4513; /* Brown color */
-  font-family: Arial, sans-serif; /* Arial font */
+  font-family: Arial, sans-serif !important; /* Arial */
   font-weight: bold;
 }
 
@@ -133,7 +138,7 @@ nav ul li a:hover {
 .main-title {
   font-size: 2.8rem;
   color: #8B4513; /* Brown */
-  font-family: Arial, sans-serif; /* Arial */
+  font-family: Arial, sans-serif !important; /* Arial */
   font-weight: bold;
   text-align: center;
 }
@@ -144,6 +149,7 @@ nav ul li a:hover {
   margin: auto;
   color: #555;
   margin-bottom: 40px;
+  font-family: Arial, sans-serif;
 }
 
 /* Education Section */
@@ -156,6 +162,7 @@ nav ul li a:hover {
   background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   text-align: justify;
+  font-family: Arial, sans-serif;
 }
 
 .edu-card h4 {
@@ -187,12 +194,13 @@ nav ul li a:hover {
   max-width: 600px;
   background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-family: Arial, sans-serif;
 }
 
 .contact-card h3 {
   margin-top: 0;
   color: #8B4513; /* Brown for section heading */
-  font-family: Arial, sans-serif; /* Arial */
+  font-family: Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -204,6 +212,7 @@ nav ul li a:hover {
   color: #0077ff;
   text-decoration: none;
   margin-right: 15px;
+  font-family: Arial, sans-serif;
 }
 
 .contact-card a:hover {
