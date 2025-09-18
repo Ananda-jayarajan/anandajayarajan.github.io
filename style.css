@@ -19,7 +19,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Times New Roman", serif;
+  font-family: Arial, sans-serif; /* Top bar font as Arial */
 }
 
 nav .nav-left {
@@ -44,7 +44,7 @@ nav ul li a {
   color: #fff; /* white text */
   text-decoration: none;
   font-weight: bold;
-  font-family: "Times New Roman", serif; /* Times New Roman font */
+  font-family: Arial, sans-serif; /* Arial font for nav links */
 }
 
 nav ul li a:hover {
@@ -119,11 +119,23 @@ nav ul li a:hover {
   display: none;
 }
 
-/* Section Titles */
+/* Section Titles (major titles) */
 .section-title {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 10px;
+  color: #8B4513; /* Brown color */
+  font-family: Arial, sans-serif; /* Arial font */
+  font-weight: bold;
+}
+
+/* Special styling for main name/title */
+.main-title {
+  font-size: 2.8rem;
+  color: #8B4513; /* Brown */
+  font-family: Arial, sans-serif; /* Arial */
+  font-weight: bold;
+  text-align: center;
 }
 
 .section-desc {
@@ -143,11 +155,14 @@ nav ul li a:hover {
   max-width: 900px;
   background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: justify;
 }
 
 .edu-card h4 {
   margin-top: 0;
-  color: #0077ff;
+  color: #1e90ff; /* Blue for degree titles */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
 }
 
 .edu-card p {
@@ -176,7 +191,9 @@ nav ul li a:hover {
 
 .contact-card h3 {
   margin-top: 0;
-  color: #0077ff;
+  color: #8B4513; /* Brown for section heading */
+  font-family: Arial, sans-serif; /* Arial */
+  font-weight: bold;
 }
 
 .contact-card p {
