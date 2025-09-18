@@ -8,40 +8,44 @@ body {
 
 /* Navbar */
 nav {
-  background: #4b2e2e; /* dark brown */
-  padding: 1rem 2rem;
+  background: #fff; /* light background */
+  border-bottom: 1px solid #ddd; /* subtle bottom line */
+  padding: 0.8rem 2rem;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 /* Left side (name) */
-.nav-left a {
-  color: #fff;
-  font-weight: bold;
+nav .nav-left a {
   font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
   text-decoration: none;
 }
 
-/* Right side (menu items) */
-.nav-right a {
-  margin-left: 2rem;
-  color: #fff;
+/* Right side (links) */
+nav .nav-right {
+  display: flex;
+  gap: 2rem;
+}
+
+nav .nav-right a {
+  color: #444;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1rem;
 }
 
-.nav-right a:hover,
-.nav-left a:hover {
-  color: #ffcc00; /* hover accent */
+nav .nav-right a:hover {
+  color: #0077ff;
 }
+
 
 /* Sections */
 .section {
@@ -231,3 +235,4 @@ h3 {
 .contact-card a:hover {
   text-decoration: underline;
 }
+
