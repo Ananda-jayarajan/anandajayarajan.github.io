@@ -45,7 +45,7 @@ nav ul li a {
   color: #fff; /* white text */
   text-decoration: none;
   font-weight: bold;
-  font-family: Arial, sans-serif !important; /* Force Arial font */
+  font-family: Arial, sans-serif !important; /* Arial font */
 }
 
 nav ul li a:hover {
@@ -111,11 +111,13 @@ nav ul li a:hover {
   font-size: 1.1rem;
 }
 
-/* Main content shifted to the right of sidebar */
+/* Main content shifted to the right of sidebar with margin */
 .main-content {
   margin-left: 280px;
   padding: 80px 40px 40px;
-  text-align: justify; /* Justify align content */
+  max-width: 900px; /* Limit content width */
+  margin-right: auto; /* leave white space on the right */
+  text-align: justify;
   font-family: Arial, sans-serif;
 }
 
@@ -129,8 +131,8 @@ nav ul li a:hover {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 10px;
-  color: #8B4513; /* Brown color */
-  font-family: Arial, sans-serif !important; /* Arial */
+  color: #8B4513; /* Brown */
+  font-family: Arial, sans-serif !important;
   font-weight: bold;
 }
 
@@ -138,7 +140,7 @@ nav ul li a:hover {
 .main-title {
   font-size: 2.8rem;
   color: #8B4513; /* Brown */
-  font-family: Arial, sans-serif !important; /* Arial */
+  font-family: Arial, sans-serif !important;
   font-weight: bold;
   text-align: center;
 }
@@ -199,7 +201,7 @@ nav ul li a:hover {
 
 .contact-card h3 {
   margin-top: 0;
-  color: #8B4513; /* Brown for section heading */
+  color: #8B4513; /* Brown */
   font-family: Arial, sans-serif;
   font-weight: bold;
 }
@@ -222,9 +224,10 @@ nav ul li a:hover {
 /* Responsive */
 @media (max-width: 900px) {
   .sidebar {
-    display: none; /* hide sidebar on small screens */
+    display: none;
   }
   .main-content {
     margin-left: 0;
+    max-width: 100%;
   }
 }
